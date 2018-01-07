@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
+gem 'bootstrap', '~> 4.0.0.beta3'
+gem 'jquery-rails'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -51,7 +53,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :production do 
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
