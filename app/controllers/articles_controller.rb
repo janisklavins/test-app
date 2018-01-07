@@ -21,7 +21,14 @@ end
 
 def edit
   @article = Article.find(params[:id])
-end 
+end
+
+def destroy
+  @article = Article.find(params[:id])
+  @article.destroy
+  flash[:notice] = "Successfully deleted article"
+  redirect_to articles_path
+end
 
 def update
   @article = Article.find(params[:id])
